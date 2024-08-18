@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Itim', cursive;
+	background-color: #12181b;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body::before {
+	content: 'By Mahmoud Moumen';
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 10px;
+	color: white;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent white white transparent;
+	padding: 7px 10px;
+	border-radius: 50%;
+}
+
+main {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+main section.head h1 {
+	font-size: 30px;
+	font-family: cursive;
+}
+
+main section.head .theTurnStatement {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.playerX {
+	color: #09c372;
+}
+
+.playerO {
+	color: #498afb;
+}
+
+main .containerOfBoxes {
+	width: 350px;
+	height: 300px;
+	display: grid;
+	grid: repeat(3, 1fr) / repeat(3, 1fr);
+	margin-top: 55px;
+}
+
+.containerOfBoxes .box {
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.controls .resetBtn {
+	margin-top: 20px;
+	color: white;
+	background-color: #ff3860;
+	padding: 5px 10px;
+	border-radius: 8px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+}
+
+.done {
+	pointer-events: none;
+}
+
+#winnerMsg {
+	font-size: 14px;
+	margin-top: 50px;
+}
+
+#winnerMsg > span {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+#animatedCircleloading {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid white;
+	border-left-color: transparent;
+	animation: animatedLoading 1s linear infinite;
+}
+
+@keyframes animatedLoading {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

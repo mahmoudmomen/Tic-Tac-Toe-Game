@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+		/>
+		<title>Tic-Tac-Toe</title>
+	</head>
+	<body>
+		<main>
+			<section class="head">
+				<h1>Tic Tac Toe</h1>
+				<p class="theTurnStatement">Player <span id="playerSwitch"></span>'s turn</p>
+			</section>
+			<section class="containerOfBoxes">
+				<div class="box" data-idx="0"></div>
+				<div class="box" data-idx="1"></div>
+				<div class="box" data-idx="2"></div>
+				<div class="box" data-idx="3"></div>
+				<div class="box" data-idx="4"></div>
+				<div class="box" data-idx="5"></div>
+				<div class="box" data-idx="6"></div>
+				<div class="box" data-idx="7"></div>
+				<div class="box" data-idx="8"></div>
+			</section>
+			<section>
+				<p id="winnerMsg">
+					The Winner Player Is <span><span id="animatedCircleloading"></span></span>
+				</p>
+			</section>
+			<section class="controls">
+				<button class="resetBtn">Reset</button>
+			</section>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>
